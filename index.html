@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #navbar {
+        float:left;
+        width:10%;
+        height:100%;
+        position:fixed;
+        top: 10;
+        left:0;
+        list-style-type: none;
+        }
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: white;
+      }
+
+      .header h1 {
+        font-size: 50px;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: right;
+        width: 90%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="header">
+      <h1>Technical Documentation Page</h1>
+      <p>How to play guitar</p>
+    </div>
+
+    <nav id="navbar">
+      <header>Want to look cool playing guitar?</header><br>
+    <li><a href="#Put_on_guitar" class="nav-link">Put on Guitar</a></li><br>
+    <li><a href="#Turn_on_Amp" class="nav-link">Turn on Amp</a></li><br>
+    <li><a href="#Plug_in_Cable" class="nav-link">Plug in Cable</a></li><br>
+    <li><a href="#Tune_your_Guitar" class="nav-link">Tune your Guitar</a></li><br>
+    <li><a href="#Rock_Out!" class="nav-link">Rock Out!</a></li><br>
+    </nav>
+    <div class="row">
+      <div class="leftcolumn">
+        <main id="main-doc">
+          <div class="card">
+              <section class ="main-section" id="Put_on_guitar">
+              <header>Put on Guitar</header>
+              <code></code>
+              <li>Put guitar strap over shoulder</li>
+              <p>Make sure you buy a cool looking strap</p>
+              <p>Put the strap over the shoulder of your strumming hand</p>
+              </section>
+          </div>
+          <div class="card">
+            <section class ="main-section" id="Plug_in_Cable">
+              <header>Plug in Cable</header>
+              <code></code>
+              <li>Put one end of the cable into the guitar</li>
+              <li>Put the other end into the amp input jack</li>
+              <p>The instrument cable should be made of high quality materials</p>
+              <p>I prefer mogami cables</p>
+            </section>
+          </div>
+          <div class="card">
+              <section class ="main-section" id="Turn_on_Amp">
+              <header>Turn on Amp</header>
+              <code></code>
+              <li>Turn the power switch to "on"</li>
+              <p>Make sure the amp is also plugged into a power source</p>
+              <p>Slowly turn the volume knob up</p>
+              </section>
+          </div>
+        <div class="card">
+          <section class ="main-section" id="Tune_your_Guitar">
+            <header>Tune your Guitar</header>
+            <code></code>
+            <li>Tune to A=440</li>
+            <p>Or if you're playing Djent, down tune to your preferred tuning</p>
+            <p>8 string guitars are tuned to F#BEADGBE</p>
+            </section>
+        </div>
+        <div class="card">
+          <section class ="main-section" id="Rock_Out!">
+            <header>Rock Out!</header>
+            <code></code>
+            <li>With your bad self!</li>
+
+            <p>Strum your guitar</p>
+            <p>You're a rock star!</p>
+            </section>
+        </div>
+        </main>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
